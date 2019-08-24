@@ -12,5 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return "INI TULISAN";
+});
+
+Route::get('bisman', function () {
+    // return view('welcome');
+    return "INI TULISAN BISMAN";
+});
+
+Route::get('angka/{var}', function ($var) {
+    return $var;
+});
+
+Route::get('pangkat/{angka}', function ($angka) {
+    $hasil = $angka * $angka;
+    return $hasil;
+
 });
