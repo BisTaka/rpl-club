@@ -30,3 +30,7 @@ Route::get('pangkat/{angka}', function ($angka) {
     return $hasil;
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
